@@ -4,6 +4,10 @@ There's a strange interaction with ActiveRecord's `includes` and `select` and
 `where`. The `SELECT` portion of the query is being over-written when you put
 `WHERE` constraints on your query.
 
+I made [an example gist](https://gist.github.com/benhamill/6162089) in
+accordance with Rails's guidelines for making Issues. Continue below if you want
+an interactive pry example so that you can play with it.
+
 ## Set Up
 
 Run `bundle install` then `rake db:setup` to get the DB right. After that, `rake
